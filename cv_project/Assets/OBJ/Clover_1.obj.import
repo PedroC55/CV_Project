@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dffn5bu0wrviv"
+path="res://.godot/imported/Clover_1.obj-fa8bba6512b7803f15c7c32a97c31aac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Clover_1.obj-fa8bba6512b7803f15c7c32a97c31aac.mesh"]
+
+source_file="res://Assets/OBJ/Clover_1.obj"
+dest_files=["res://.godot/imported/Clover_1.obj-fa8bba6512b7803f15c7c32a97c31aac.mesh", "res://.godot/imported/Clover_1.obj-fa8bba6512b7803f15c7c32a97c31aac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

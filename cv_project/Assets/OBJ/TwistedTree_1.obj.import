@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ciiodjec5ch42"
+path="res://.godot/imported/TwistedTree_1.obj-c69af3b5f5349030f784d4eb41a70663.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TwistedTree_1.obj-c69af3b5f5349030f784d4eb41a70663.mesh"]
+
+source_file="res://Assets/OBJ/TwistedTree_1.obj"
+dest_files=["res://.godot/imported/TwistedTree_1.obj-c69af3b5f5349030f784d4eb41a70663.mesh", "res://.godot/imported/TwistedTree_1.obj-c69af3b5f5349030f784d4eb41a70663.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
