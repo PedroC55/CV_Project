@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0bdiqcpg7o1j"]
+
+[ext_resource type="PackedScene" uid="uid://du2r2ga6nmw0l" path="res://Assets/FBX/Pebble_Square_5.fbx" id="1_m1np4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a4eld"]
+size = Vector3(0.06, 0.03, 0.105)
+
+[node name="Pebble_Square_5" instance=ExtResource("1_m1np4")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pebble_Square_5" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pebble_Square_5/StaticBody3D" index="0"]
+transform = Transform3D(0.0300003, 0, 0, 0, 0.144004, 1.55431e-15, 0, 1.06581e-14, -0.0300004, 0, 0, 0)
+shape = SubResource("BoxShape3D_a4eld")

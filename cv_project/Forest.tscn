@@ -1,0 +1,259 @@
+[gd_scene load_steps=29 format=3 uid="uid://r3008b14bhbe"]
+
+[ext_resource type="PackedScene" uid="uid://clw06urxjopyb" path="res://tree_updated.tscn" id="1_ckl1k"]
+[ext_resource type="Texture2D" uid="uid://vq4jewmxqh82" path="res://Assets/Textures/ground_textures/forrest_ground_01_diff_1k.jpg" id="1_t76ag"]
+[ext_resource type="Texture2D" uid="uid://bu6iw22autrua" path="res://Assets/Textures/ground_textures/forrest_ground_01_nor_gl_1k.png" id="2_6vg75"]
+[ext_resource type="PackedScene" uid="uid://hns3t2s8ryp" path="res://Assets/FBX/Flower_4_Group.fbx" id="2_cvud8"]
+[ext_resource type="Texture2D" uid="uid://bs8nmyn5tt1o3" path="res://Assets/Textures/ground_textures/forrest_ground_01_rough_1k.jpg" id="3_l8bel"]
+[ext_resource type="PackedScene" uid="uid://hq4e761mpyq6" path="res://Assets/FBX/Flower_3_Single.fbx" id="3_x4vp1"]
+[ext_resource type="PackedScene" uid="uid://dk7bdt6d82vjr" path="res://Assets/FBX/Flower_3_Group.fbx" id="4_hcqd5"]
+[ext_resource type="PackedScene" uid="uid://bd23ub8eg2el4" path="res://Assets/FBX/Fern_1.fbx" id="5_pr2dt"]
+[ext_resource type="PackedScene" uid="uid://cwvn0nighww52" path="res://Assets/FBX/Clover_1.fbx" id="6_0tjqf"]
+[ext_resource type="PackedScene" uid="uid://dm14y8uqr8txn" path="res://Assets/FBX/Bush_Common.fbx" id="7_8ss1h"]
+[ext_resource type="PackedScene" uid="uid://dyrvbpjnfay2u" path="res://Assets/FBX/Bush_Common_Flowers.fbx" id="8_fru8e"]
+[ext_resource type="PackedScene" uid="uid://s86gfkdf18eu" path="res://Assets/FBX/Grass_Common_Short.fbx" id="10_oogv2"]
+[ext_resource type="PackedScene" uid="uid://c0bdiqcpg7o1j" path="res://rock.tscn" id="11_dwt1s"]
+[ext_resource type="Script" path="res://day_night_cycle.gd" id="14_gcm41"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gwcni"]
+size = Vector3(30, 2, 30)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eedpt"]
+albedo_color = Color(0.548667, 0.969458, 0.241803, 1)
+albedo_texture = ExtResource("1_t76ag")
+roughness_texture = ExtResource("3_l8bel")
+emission = Color(0.92549, 0, 0, 1)
+normal_enabled = true
+normal_texture = ExtResource("2_6vg75")
+uv1_scale = Vector3(60, 60, 60)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l54m4"]
+material = SubResource("StandardMaterial3D_eedpt")
+size = Vector3(30, 2, 30)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ttu77"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pu7rp"]
+
+[sub_resource type="Gradient" id="Gradient_x0c50"]
+offsets = PackedFloat32Array(0, 0.3, 0.7, 1)
+colors = PackedColorArray(1, 0.584314, 0.262745, 1, 0.968627, 0.921569, 0.858824, 1, 0.968627, 0.921569, 0.858824, 1, 1, 0.584314, 0.262745, 1)
+
+[sub_resource type="Curve" id="Curve_g0yib"]
+_data = [Vector2(0.2, 0), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(0.7, 1), 0.0, 0.0, 0, 0, Vector2(0.8, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_malvg"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.301961, 0.266667, 0.823529, 1)
+
+[sub_resource type="Curve" id="Curve_pklnd"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.25, 0), 0.0, 0.0, 0, 0, Vector2(0.75, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_j0bac"]
+offsets = PackedFloat32Array(0.1, 0.4, 0.6, 0.9)
+colors = PackedColorArray(0.317647, 0.333333, 0.65098, 1, 0.184314, 0.87451, 0.878431, 1, 0.184314, 0.87451, 0.878431, 1, 0.317647, 0.333333, 0.65098, 1)
+
+[sub_resource type="Gradient" id="Gradient_iuwk7"]
+offsets = PackedFloat32Array(0.1, 0.252066, 0.4, 0.6, 0.69, 0.9)
+colors = PackedColorArray(0.317647, 0.333333, 0.65098, 1, 0.87451, 0.521569, 0.407843, 1, 0.184314, 0.87451, 0.878431, 1, 0.184314, 0.87451, 0.878431, 1, 0.87451, 0.521569, 0.407843, 1, 0.317647, 0.333333, 0.65098, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q56cn"]
+sky_top_color = Color(0.155747, 0.454234, 0.764721, 1)
+sky_horizon_color = Color(0.646867, 0.758844, 0.917707, 1)
+ground_bottom_color = Color(0.156863, 0.454902, 0.764706, 1)
+ground_horizon_color = Color(0.647059, 0.760784, 0.917647, 1)
+
+[sub_resource type="Sky" id="Sky_5epha"]
+sky_material = SubResource("ProceduralSkyMaterial_q56cn")
+
+[sub_resource type="Environment" id="Environment_fi5tp"]
+background_mode = 2
+background_energy_multiplier = 0.55
+sky = SubResource("Sky_5epha")
+ambient_light_source = 3
+reflected_light_source = 2
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("BoxShape3D_gwcni")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("BoxMesh_l54m4")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 9, -17)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+mesh = SubResource("BoxMesh_ttu77")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("BoxShape3D_pu7rp")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1, -15)
+
+[node name="Flower_4_Group" parent="." instance=ExtResource("2_cvud8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -10)
+
+[node name="Flower_3_Single" parent="." instance=ExtResource("3_x4vp1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+
+[node name="Flower_3_Group" parent="." instance=ExtResource("4_hcqd5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -12)
+
+[node name="Fern_1" parent="." instance=ExtResource("5_pr2dt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -6)
+
+[node name="Clover_1" parent="." instance=ExtResource("6_0tjqf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -11)
+
+[node name="Bushes" type="Node" parent="."]
+
+[node name="Bush_Common" parent="Bushes" instance=ExtResource("7_8ss1h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -14)
+
+[node name="Bush_Common2" parent="Bushes" instance=ExtResource("7_8ss1h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -13)
+
+[node name="Bush_Common3" parent="Bushes" instance=ExtResource("7_8ss1h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -12)
+
+[node name="Bush_Common4" parent="Bushes" instance=ExtResource("7_8ss1h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -13)
+
+[node name="Bush_Common_Flowers" parent="Bushes" instance=ExtResource("8_fru8e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -11)
+
+[node name="Trees" type="Node" parent="."]
+
+[node name="CommonTree_1" parent="Trees" instance=ExtResource("1_ckl1k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+
+[node name="CommonTree_2" parent="Trees" instance=ExtResource("1_ckl1k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="CommonTree_3" parent="Trees" instance=ExtResource("1_ckl1k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, -4)
+
+[node name="Grass" type="Node" parent="."]
+
+[node name="Grass_Common_Short" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+
+[node name="Grass_Common_Short3" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55, 0, -3.6)
+
+[node name="Grass_Common_Short4" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3.6)
+
+[node name="Grass_Common_Short5" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55, 0, -4.5)
+
+[node name="Grass_Common_Short6" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55, 0, -4)
+
+[node name="Grass_Common_Short7" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4.5)
+
+[node name="Grass_Common_Short8" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4)
+
+[node name="Grass_Common_Short9" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0, -3.6)
+
+[node name="Grass_Common_Short10" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3.6)
+
+[node name="Grass_Common_Short11" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0, -4.5)
+
+[node name="Grass_Common_Short12" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0, -4)
+
+[node name="Grass_Common_Short13" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4.5)
+
+[node name="Grass_Common_Short14" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -5)
+
+[node name="Grass_Common_Short15" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0, -4.6)
+
+[node name="Grass_Common_Short16" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4.6)
+
+[node name="Grass_Common_Short17" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0, -5.5)
+
+[node name="Grass_Common_Short18" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 0, -5)
+
+[node name="Grass_Common_Short19" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -5.5)
+
+[node name="Grass_Common_Short20" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -5)
+
+[node name="Grass_Common_Short21" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55, 0, -4.6)
+
+[node name="Grass_Common_Short22" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4.6)
+
+[node name="Grass_Common_Short23" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55, 0, -5.5)
+
+[node name="Grass_Common_Short24" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55, 0, -5)
+
+[node name="Grass_Common_Short25" parent="Grass" instance=ExtResource("10_oogv2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -5.5)
+
+[node name="Rocks" type="Node" parent="."]
+
+[node name="Pebble_Square_9" parent="Rocks" instance=ExtResource("11_dwt1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -13)
+
+[node name="Pebble_Square_10" parent="Rocks" instance=ExtResource("11_dwt1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -15)
+
+[node name="Pebble_Square_11" parent="Rocks" instance=ExtResource("11_dwt1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -14)
+
+[node name="Pebble_Square_12" parent="Rocks" instance=ExtResource("11_dwt1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -13)
+
+[node name="Pebble_Square_13" parent="Rocks" instance=ExtResource("11_dwt1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -15)
+
+[node name="Pebble_Square_14" parent="Rocks" instance=ExtResource("11_dwt1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -14)
+
+[node name="DayNightCycle" type="Node3D" parent="."]
+script = ExtResource("14_gcm41")
+sun_color = SubResource("Gradient_x0c50")
+sun_intensity = SubResource("Curve_g0yib")
+moon_color = SubResource("Gradient_malvg")
+moon_intensity = SubResource("Curve_pklnd")
+sky_top_color = SubResource("Gradient_j0bac")
+sky_horizon_color = SubResource("Gradient_iuwk7")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DayNightCycle"]
+environment = SubResource("Environment_fi5tp")
+
+[node name="Sun" type="DirectionalLight3D" parent="DayNightCycle"]
+transform = Transform3D(1, 0, 0, 0, -0.5, 0.866025, 0, -0.866025, -0.5, 0, 6, 1)
+light_energy = 4.108
+shadow_enabled = true
+
+[node name="Moon" type="DirectionalLight3D" parent="DayNightCycle"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 6, 1)
+light_energy = 4.108
+shadow_enabled = true
+sky_mode = 1
