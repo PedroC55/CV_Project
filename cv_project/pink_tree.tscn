@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dond64xv0orjh"]
+
+[ext_resource type="PackedScene" uid="uid://ek0u48h0r61" path="res://Assets/FBX/TwistedTree_2.fbx" id="1_2a2mj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_foxwg"]
+size = Vector3(0.02, 0.02, 0.155)
+
+[node name="TwistedTree_2" instance=ExtResource("1_2a2mj")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TwistedTree_2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TwistedTree_2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, -2.84217e-14, 0, 2.84217e-14, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_foxwg")
