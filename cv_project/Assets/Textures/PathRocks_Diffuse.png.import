@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b57rirxg6iefv"
-path.s3tc="res://.godot/imported/PathRocks_Diffuse.png-cab1a85c26fff89906658f4aec329a2f.s3tc.ctex"
+path.s3tc="res://.godot/imported/PathRocks_Diffuse.png-54a69e45e081c32e683cc3dd2a884079.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/textures/PathRocks_Diffuse.png"
-dest_files=["res://.godot/imported/PathRocks_Diffuse.png-cab1a85c26fff89906658f4aec329a2f.s3tc.ctex"]
+source_file="res://Assets/Textures/PathRocks_Diffuse.png"
+dest_files=["res://.godot/imported/PathRocks_Diffuse.png-54a69e45e081c32e683cc3dd2a884079.s3tc.ctex"]
 
 [params]
 
