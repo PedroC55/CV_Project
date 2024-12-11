@@ -1,0 +1,30 @@
+[gd_scene load_steps=9 format=3 uid="uid://l8k1mi3x515a"]
+
+[ext_resource type="PackedScene" uid="uid://d2lyrqq5ooey5" path="res://Assets/FBX/Armoury Room/Shelves/trn_Cupboard.fbx" id="1_r1gm3"]
+[ext_resource type="Texture2D" uid="uid://byuoap5eomnek" path="res://Assets/FBX/Armoury Room/Shelves/trn_Cupboard_Bottom_AlbedoTransparency.png" id="2_qb8kg"]
+[ext_resource type="Texture2D" uid="uid://ccwig7dou601d" path="res://Assets/FBX/Armoury Room/Shelves/trn_Cupboard_Top_AlbedoTransparency.png" id="3_agcfd"]
+[ext_resource type="Texture2D" uid="uid://dt03jco6ltoq7" path="res://Assets/FBX/Armoury Room/Shelves/trn_Cupboard_Door_AlbedoTransparency.png" id="4_c1hog"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0fwkr"]
+albedo_texture = ExtResource("2_qb8kg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4fnub"]
+albedo_texture = ExtResource("3_agcfd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0w0vd"]
+albedo_texture = ExtResource("4_c1hog")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wj2c"]
+albedo_texture = ExtResource("4_c1hog")
+
+[node name="trn_Cupboard" instance=ExtResource("1_r1gm3")]
+
+[node name="trn_Cupboard" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0fwkr")
+surface_material_override/1 = SubResource("StandardMaterial3D_4fnub")
+
+[node name="trn_CupboardDoor_Right" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0w0vd")
+
+[node name="trn_CupboardDoor_Left" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_6wj2c")

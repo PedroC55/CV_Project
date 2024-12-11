@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://j1b6nwww21a3"]
+
+[ext_resource type="PackedScene" uid="uid://c3t14t1bnvo5p" path="res://Assets/FBX/Armoury Room/Cheese/trn_Cheese.fbx" id="1_1o1ji"]
+[ext_resource type="Texture2D" uid="uid://ds226hueuxrv8" path="res://Assets/FBX/Armoury Room/Cheese/trn_Cheese_AlbedoTransparency.png" id="2_8lyoy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sxdha"]
+albedo_texture = ExtResource("2_8lyoy")
+
+[node name="trn_Cheese" instance=ExtResource("1_1o1ji")]
+
+[node name="trn_Cheese" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sxdha")
