@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://clw06urxjopyb"]
 
-[ext_resource type="PackedScene" uid="uid://d15wv5ugisja4" path="res://Assets/FBX/CommonTree_1.fbx" id="1_jbkuc"]
+[ext_resource type="PackedScene" uid="uid://d15wv5ugisja4" path="res://Assets/FBX/Forest/CommonTree_1.fbx" id="1_jbkuc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cuf1o"]
 size = Vector3(0.0111267, 0.0137695, 0.0640015)

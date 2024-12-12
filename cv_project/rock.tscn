@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c0bdiqcpg7o1j"]
 
-[ext_resource type="PackedScene" uid="uid://du2r2ga6nmw0l" path="res://Assets/FBX/Pebble_Square_5.fbx" id="1_m1np4"]
+[ext_resource type="PackedScene" uid="uid://du2r2ga6nmw0l" path="res://Assets/FBX/Forest/Pebble_Square_5.fbx" id="1_m1np4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a4eld"]
 size = Vector3(0.06, 0.03, 0.105)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dond64xv0orjh"]
 
-[ext_resource type="PackedScene" uid="uid://ek0u48h0r61" path="res://Assets/FBX/TwistedTree_2.fbx" id="1_2a2mj"]
+[ext_resource type="PackedScene" uid="uid://ek0u48h0r61" path="res://Assets/FBX/Forest/TwistedTree_2.fbx" id="1_2a2mj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_foxwg"]
 size = Vector3(0.02, 0.02, 0.155)

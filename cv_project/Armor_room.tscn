@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://b71i42201jdiy"]
+
+[ext_resource type="PackedScene" uid="uid://cqb7fkyead5iu" path="res://floor.tscn" id="1_0cfj8"]
+[ext_resource type="PackedScene" uid="uid://cl46084bqkv7d" path="res://Assets/FBX/Armor Room/Armors/uploads_files_4749824_armor.blend" id="1_a4868"]
+[ext_resource type="PackedScene" uid="uid://chg5arn7op3pv" path="res://player.tscn" id="2_exdqq"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Floor" parent="." instance=ExtResource("1_0cfj8")]
+
+[node name="Roof" parent="." instance=ExtResource("1_0cfj8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+
+[node name="Wall1" parent="." instance=ExtResource("1_0cfj8")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -0.28, 0, 1, -1.22392e-08, 0, 2.5, 9)
+
+[node name="Wall2" parent="." instance=ExtResource("1_0cfj8")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -0.28, 0, 1, -1.22392e-08, 0, 2.5, -9)
+
+[node name="Wall3" parent="." instance=ExtResource("1_0cfj8")]
+transform = Transform3D(-4.37114e-08, 1, -1.22392e-08, 0, -4.37114e-08, -0.28, -1, -4.37114e-08, 5.34992e-16, 9, 2.5, 0)
+
+[node name="Wall4" parent="." instance=ExtResource("1_0cfj8")]
+transform = Transform3D(-1.74846e-08, 1, -1.22392e-08, 0, -4.37114e-08, -0.28, -0.4, -4.37114e-08, 5.34992e-16, -9, 2.5, 5.4)
+
+[node name="Wall5" parent="." instance=ExtResource("1_0cfj8")]
+transform = Transform3D(-1.74846e-08, 1, -1.22392e-08, 0, -4.37114e-08, -0.28, -0.4, -4.37114e-08, 5.34992e-16, -9, 2.5, -5.4)
+
+[node name="uploads_files_4749824_armor" parent="." instance=ExtResource("1_a4868")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.37542, 0, 8.01842)
+
+[node name="Player" parent="." instance=ExtResource("2_exdqq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -7.89553)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.723, 0)
+size = Vector3(19, 20, 19)
+interior = true
