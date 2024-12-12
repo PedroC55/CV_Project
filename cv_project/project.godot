@@ -11,14 +11,9 @@ config_version=5
 [application]
 
 config/name="CV_Project"
-run/main_scene="res://armoury_room.tscn"
+run/main_scene="res://Cave.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
-<<<<<<<Updatedupstreamrun/main_scene="res://Cave.tscn"
-
-[filesystem]
-
-import/blender/enabled=false
 
 [input]
 
