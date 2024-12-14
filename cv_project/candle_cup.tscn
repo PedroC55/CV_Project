@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4exa5p1pwot3"]
+
+[ext_resource type="PackedScene" uid="uid://citu4ayjyw1qq" path="res://Assets/FBX/Armor Room/Other Assets/CandleCup/trn_CandleCup.fbx" id="1_laiek"]
+[ext_resource type="PackedScene" uid="uid://ju54x5eg6apr" path="res://candle_Light.tscn" id="2_86vxb"]
+
+[node name="trn_CandleCup" instance=ExtResource("1_laiek")]
+
+[node name="trn_Candle" parent="." index="1" instance=ExtResource("2_86vxb")]

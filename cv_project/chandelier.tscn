@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://n8ky24q8bjve"]
+
+[ext_resource type="PackedScene" uid="uid://d17s7qdviokrm" path="res://Assets/FBX/Armor Room/Other Assets/Chandelier/trn_Chandelier.fbx" id="1_7g3we"]
+[ext_resource type="PackedScene" uid="uid://ju54x5eg6apr" path="res://candle_Light.tscn" id="2_b75vi"]
+
+[node name="trn_Chandelier" instance=ExtResource("1_7g3we")]
+
+[node name="trn_Candle" parent="." index="1" instance=ExtResource("2_b75vi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, -0.683, 0)
+
+[node name="trn_Candle2" parent="." index="2" instance=ExtResource("2_b75vi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27, -0.683, 0)
+
+[node name="trn_Candle3" parent="." index="3" instance=ExtResource("2_b75vi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.683, 0.27)
+
+[node name="trn_Candle4" parent="." index="4" instance=ExtResource("2_b75vi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.683, -0.27)

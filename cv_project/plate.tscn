@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1thng70e4kg1"]
+
+[ext_resource type="PackedScene" uid="uid://bsdduw4h7wq3p" path="res://Assets/FBX/Armor Room/Other Assets/Plates/trn_Plate.fbx" id="1_swlsn"]
+
+[node name="trn_Plate" instance=ExtResource("1_swlsn")]

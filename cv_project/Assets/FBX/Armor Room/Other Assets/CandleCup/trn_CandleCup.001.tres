@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://ccqfryxuwill5"]
+
+[ext_resource type="Texture2D" uid="uid://7opslj2mwmab" path="res://Assets/FBX/Armor Room/Other Assets/CandleCup/trn_CandleCup_AlbedoTransparency.png" id="1_aogxc"]
+[ext_resource type="Texture2D" uid="uid://c6f57tkyal36n" path="res://Assets/FBX/Armor Room/Other Assets/CandleCup/trn_CandleCup_MetallicSmoothness.png" id="2_4a57t"]
+[ext_resource type="Texture2D" uid="uid://bc4mjgyb85q1b" path="res://Assets/FBX/Armor Room/Other Assets/CandleCup/trn_CandleCup_Normal.png" id="3_eq608"]
+
+[resource]
+resource_name = "trn_CandleCup.001"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.82098, 0.82098, 0.82098, 1)
+albedo_texture = ExtResource("1_aogxc")
+metallic = 1.0
+metallic_texture = ExtResource("2_4a57t")
+emission_enabled = true
+emission = Color(0.906332, 0.906332, 0.906332, 1)
+emission_energy_multiplier = 0.0
+normal_enabled = true
+normal_texture = ExtResource("3_eq608")
