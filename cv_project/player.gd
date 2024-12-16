@@ -1,9 +1,14 @@
 extends CharacterBody3D
 
+# Variables
+var grabbed_object: RigidBody3D = null
+@onready var detection_area = $Head/Area3D
+
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY = 0.01
+const GRAB_OFFSET = Vector3(2, 1, 0)
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
@@ -11,6 +16,29 @@ const SENSITIVITY = 0.01
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	detection_area.body_entered.connect(self._on_body_entered)
+	detection_area.body_exited.connect(self._on_body_exited)
+
+# List of objects in the detection area
+var objects_in_area = []
+
+func _on_body_entered(body):
+	if body is RigidBody3D:
+		objects_in_area.append(body)
+
+func _on_body_exited(body):
+	if body is RigidBody3D:
+		objects_in_area.erase(body)
+
+
+func _process(delta):
+	if Input.is_action_just_pressed("grab"):
+		if grabbed_object:
+			release_object()
+		else:
+			try_grab_object()
+	if grabbed_object:
+		update_grabbed_object_position()
 
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseMotion:
@@ -39,3 +67,24 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func try_grab_object():
+	if objects_in_area.size() > 0:
+		grabbed_object = objects_in_area[0]  # Grab the first object in the area
+		grabbed_object.freeze = true
+		print("Object grabbed:", grabbed_object.name)
+
+func release_object():
+	if grabbed_object:
+		grabbed_object.freeze = false
+		grabbed_object = null
+		print("Object released")
+		
+# Function to update the position of the grabbed object
+func update_grabbed_object_position():
+	if grabbed_object:
+		# Set the position of the grabbed object relative to the player (camera/head)
+		grabbed_object.get_parent_node_3d().position = head.position + head.transform.basis.x * GRAB_OFFSET.x + GRAB_OFFSET
+		print(grabbed_object.get_parent_node_3d().position)
+		# Optionally, you may want to keep the object oriented in a certain way. If so, set the rotation too:
+		# grabbed_object.rotation = camera.rotation

@@ -86,10 +86,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.686912, 0.849686, 4.78026)
 [node name="trn_CandleCup" parent="Lights" instance=ExtResource("7_ac0db")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.89766, 1.10856, -5.30061)
 
-[node name="trn_CandleCup2" parent="Lights" instance=ExtResource("7_ac0db")]
+[node name="trn_CandleCup2" parent="Lights" groups=["grab"] instance=ExtResource("7_ac0db")]
 transform = Transform3D(0.195159, 0, 0.980772, 0, 1, 0, -0.980772, 0, 0.195159, 7.23068, 1.41888, -0.8795)
 
-[node name="trn_CandleCup3" parent="Lights" instance=ExtResource("7_ac0db")]
+[node name="trn_CandleCup3" parent="Lights" groups=["grab"] instance=ExtResource("7_ac0db")]
 transform = Transform3D(0.441271, 0, -0.897374, 0, 1, 0, 0.897374, 0, 0.441271, 7.231, 1.419, 0.88)
 
 [node name="Tables" type="Node" parent="."]
