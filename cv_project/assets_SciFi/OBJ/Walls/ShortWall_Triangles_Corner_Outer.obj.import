@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jgkc5wc7up3p"
+path="res://.godot/imported/ShortWall_Triangles_Corner_Outer.obj-10b1878baaa8dd1ae3aafb1075503532.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_Triangles_Corner_Outer.obj-10b1878baaa8dd1ae3aafb1075503532.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/ShortWall_Triangles_Corner_Outer.obj"
+dest_files=["res://.godot/imported/ShortWall_Triangles_Corner_Outer.obj-10b1878baaa8dd1ae3aafb1075503532.mesh", "res://.godot/imported/ShortWall_Triangles_Corner_Outer.obj-10b1878baaa8dd1ae3aafb1075503532.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

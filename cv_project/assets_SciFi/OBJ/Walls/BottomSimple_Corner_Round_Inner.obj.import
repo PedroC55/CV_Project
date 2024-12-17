@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d21usnvt3j01d"
+path="res://.godot/imported/BottomSimple_Corner_Round_Inner.obj-b8d595ae596fa33db6e575b64feae514.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BottomSimple_Corner_Round_Inner.obj-b8d595ae596fa33db6e575b64feae514.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/BottomSimple_Corner_Round_Inner.obj"
+dest_files=["res://.godot/imported/BottomSimple_Corner_Round_Inner.obj-b8d595ae596fa33db6e575b64feae514.mesh", "res://.godot/imported/BottomSimple_Corner_Round_Inner.obj-b8d595ae596fa33db6e575b64feae514.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3v4vvcsaxenx"
-path.s3tc="res://.godot/imported/Leaf_Pine_C.png-84492bf49bc36e5cc62db56381139542.s3tc.ctex"
+path.s3tc="res://.godot/imported/Leaf_Pine_C.png-9d78fc9cab708ef484f8c0014053b444.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/textures/Leaf_Pine_C.png"
-dest_files=["res://.godot/imported/Leaf_Pine_C.png-84492bf49bc36e5cc62db56381139542.s3tc.ctex"]
+source_file="res://Assets/Textures/Leaf_Pine_C.png"
+dest_files=["res://.godot/imported/Leaf_Pine_C.png-9d78fc9cab708ef484f8c0014053b444.s3tc.ctex"]
 
 [params]
 

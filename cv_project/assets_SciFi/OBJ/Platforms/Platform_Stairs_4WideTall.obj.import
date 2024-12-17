@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brqamkv3v6mg6"
+path="res://.godot/imported/Platform_Stairs_4WideTall.obj-7ba1a0951440728f78ff36e97f68bf8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_Stairs_4WideTall.obj-7ba1a0951440728f78ff36e97f68bf8c.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Platform_Stairs_4WideTall.obj"
+dest_files=["res://.godot/imported/Platform_Stairs_4WideTall.obj-7ba1a0951440728f78ff36e97f68bf8c.mesh", "res://.godot/imported/Platform_Stairs_4WideTall.obj-7ba1a0951440728f78ff36e97f68bf8c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

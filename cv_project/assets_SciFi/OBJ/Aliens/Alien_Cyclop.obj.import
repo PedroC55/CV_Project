@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhv0gycdkk2xc"
+path="res://.godot/imported/Alien_Cyclop.obj-2243c7d57e2d31672abb107b97cf5e40.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Alien_Cyclop.obj-2243c7d57e2d31672abb107b97cf5e40.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Aliens/Alien_Cyclop.obj"
+dest_files=["res://.godot/imported/Alien_Cyclop.obj-2243c7d57e2d31672abb107b97cf5e40.mesh", "res://.godot/imported/Alien_Cyclop.obj-2243c7d57e2d31672abb107b97cf5e40.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

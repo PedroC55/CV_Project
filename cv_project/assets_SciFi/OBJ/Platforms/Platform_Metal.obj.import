@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bro00bh76ylxb"
+path="res://.godot/imported/Platform_Metal.obj-0ee9ff597d9839c6b4be8e4f146f4f21.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_Metal.obj-0ee9ff597d9839c6b4be8e4f146f4f21.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Platform_Metal.obj"
+dest_files=["res://.godot/imported/Platform_Metal.obj-0ee9ff597d9839c6b4be8e4f146f4f21.mesh", "res://.godot/imported/Platform_Metal.obj-0ee9ff597d9839c6b4be8e4f146f4f21.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkqo7ulo72boo"
+path="res://.godot/imported/Decal_Logo_Letters.obj-1bbe4f082bf13f811025c03e74d2aa85.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Decal_Logo_Letters.obj-1bbe4f082bf13f811025c03e74d2aa85.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Decals/Decal_Logo_Letters.obj"
+dest_files=["res://.godot/imported/Decal_Logo_Letters.obj-1bbe4f082bf13f811025c03e74d2aa85.mesh", "res://.godot/imported/Decal_Logo_Letters.obj-1bbe4f082bf13f811025c03e74d2aa85.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

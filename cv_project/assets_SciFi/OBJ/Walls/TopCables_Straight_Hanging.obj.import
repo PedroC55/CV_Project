@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c3ueca0siq754"
+path="res://.godot/imported/TopCables_Straight_Hanging.obj-51f60fcc969b49584c947e16e8e3e636.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TopCables_Straight_Hanging.obj-51f60fcc969b49584c947e16e8e3e636.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/TopCables_Straight_Hanging.obj"
+dest_files=["res://.godot/imported/TopCables_Straight_Hanging.obj-51f60fcc969b49584c947e16e8e3e636.mesh", "res://.godot/imported/TopCables_Straight_Hanging.obj-51f60fcc969b49584c947e16e8e3e636.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

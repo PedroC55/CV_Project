@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://du36rbjfg417f"
+path="res://.godot/imported/TopCables_Corner_Square_Outer.obj-5258d9e84a8173a2002e7eb219fd1bad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TopCables_Corner_Square_Outer.obj-5258d9e84a8173a2002e7eb219fd1bad.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/TopCables_Corner_Square_Outer.obj"
+dest_files=["res://.godot/imported/TopCables_Corner_Square_Outer.obj-5258d9e84a8173a2002e7eb219fd1bad.mesh", "res://.godot/imported/TopCables_Corner_Square_Outer.obj-5258d9e84a8173a2002e7eb219fd1bad.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7y4d8aqr5asv"
+path="res://.godot/imported/ShortWall_DarkPlastic_Corner_Outer.obj-a656a34e22894ac1e929c3fe940be44b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_DarkPlastic_Corner_Outer.obj-a656a34e22894ac1e929c3fe940be44b.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/ShortWall_DarkPlastic_Corner_Outer.obj"
+dest_files=["res://.godot/imported/ShortWall_DarkPlastic_Corner_Outer.obj-a656a34e22894ac1e929c3fe940be44b.mesh", "res://.godot/imported/ShortWall_DarkPlastic_Corner_Outer.obj-a656a34e22894ac1e929c3fe940be44b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

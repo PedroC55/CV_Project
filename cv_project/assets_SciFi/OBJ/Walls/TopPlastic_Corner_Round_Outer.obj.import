@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cd8q0q82lk52"
+path="res://.godot/imported/TopPlastic_Corner_Round_Outer.obj-ddc5e50d51d316beb05fcba7bdeb3003.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TopPlastic_Corner_Round_Outer.obj-ddc5e50d51d316beb05fcba7bdeb3003.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/TopPlastic_Corner_Round_Outer.obj"
+dest_files=["res://.godot/imported/TopPlastic_Corner_Round_Outer.obj-ddc5e50d51d316beb05fcba7bdeb3003.mesh", "res://.godot/imported/TopPlastic_Corner_Round_Outer.obj-ddc5e50d51d316beb05fcba7bdeb3003.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

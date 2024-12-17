@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcot77iat6hwr"
+path="res://.godot/imported/Platform_DarkPlates.obj-9d1a77e3bcce4016645cae9c3246f834.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_DarkPlates.obj-9d1a77e3bcce4016645cae9c3246f834.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Platform_DarkPlates.obj"
+dest_files=["res://.godot/imported/Platform_DarkPlates.obj-9d1a77e3bcce4016645cae9c3246f834.mesh", "res://.godot/imported/Platform_DarkPlates.obj-9d1a77e3bcce4016645cae9c3246f834.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

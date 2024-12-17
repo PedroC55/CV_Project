@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c1u51s8xp5bsd"
+path="res://.godot/imported/Platform_Simple2_Curve.obj-d757dbe2667955215ce4c330d0524733.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_Simple2_Curve.obj-d757dbe2667955215ce4c330d0524733.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Platform_Simple2_Curve.obj"
+dest_files=["res://.godot/imported/Platform_Simple2_Curve.obj-d757dbe2667955215ce4c330d0524733.mesh", "res://.godot/imported/Platform_Simple2_Curve.obj-d757dbe2667955215ce4c330d0524733.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cc5n2cx0ca527"
+path="res://.godot/imported/ShortWall_MetalPlates_Straight.obj-1e923cac892ae1f437f531d50553f4e4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_MetalPlates_Straight.obj-1e923cac892ae1f437f531d50553f4e4.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/ShortWall_MetalPlates_Straight.obj"
+dest_files=["res://.godot/imported/ShortWall_MetalPlates_Straight.obj-1e923cac892ae1f437f531d50553f4e4.mesh", "res://.godot/imported/ShortWall_MetalPlates_Straight.obj-1e923cac892ae1f437f531d50553f4e4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4do5umdp5nrj"
+path="res://.godot/imported/ShortWall_WhitePlate2_Corner_Inner.obj-7cc483fcd079f984ea2f8895b8c7a511.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_WhitePlate2_Corner_Inner.obj-7cc483fcd079f984ea2f8895b8c7a511.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/ShortWall_WhitePlate2_Corner_Inner.obj"
+dest_files=["res://.godot/imported/ShortWall_WhitePlate2_Corner_Inner.obj-7cc483fcd079f984ea2f8895b8c7a511.mesh", "res://.godot/imported/ShortWall_WhitePlate2_Corner_Inner.obj-7cc483fcd079f984ea2f8895b8c7a511.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

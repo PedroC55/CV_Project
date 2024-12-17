@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://eny65nrm4u8v"]
+
+[ext_resource type="PackedScene" uid="uid://vr1m6w2qblw4" path="res://assets_SciFi/FBX/Walls/ShortWall_Metal2_Straight.fbx" id="1_bbo0q"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6lcmm"]
+data = PackedVector3Array(-0.02, 0, 0, -0.02, 0, 0.02, -0.02, 0.02, 0.02, -0.02, 0.02, 0.02, -0.02, 0.02, 0, -0.02, 0, 0, -0.02, 0, 0.02, -0.02, 0, 0, -0.02, -0.02, 0, -0.02, -0.02, 0, -0.02, -0.02, 0.02, -0.02, 0, 0.02)
+
+[node name="ShortWall_Metal2_Straight" instance=ExtResource("1_bbo0q")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_6lcmm")

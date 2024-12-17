@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d0k5pu6ci6twg"
+path="res://.godot/imported/WallBand_Corner_Round_Outer.obj-ebce9fa39d7fd47611554af0ae21287c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/WallBand_Corner_Round_Outer.obj-ebce9fa39d7fd47611554af0ae21287c.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/WallBand_Corner_Round_Outer.obj"
+dest_files=["res://.godot/imported/WallBand_Corner_Round_Outer.obj-ebce9fa39d7fd47611554af0ae21287c.mesh", "res://.godot/imported/WallBand_Corner_Round_Outer.obj-ebce9fa39d7fd47611554af0ae21287c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

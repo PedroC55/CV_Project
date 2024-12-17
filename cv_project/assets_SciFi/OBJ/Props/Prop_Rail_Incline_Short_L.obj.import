@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dyu1np63pc4si"
+path="res://.godot/imported/Prop_Rail_Incline_Short_L.obj-78b3126ea2a01e075c9fd8721f4fbf6f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Rail_Incline_Short_L.obj-78b3126ea2a01e075c9fd8721f4fbf6f.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Props/Prop_Rail_Incline_Short_L.obj"
+dest_files=["res://.godot/imported/Prop_Rail_Incline_Short_L.obj-78b3126ea2a01e075c9fd8721f4fbf6f.mesh", "res://.godot/imported/Prop_Rail_Incline_Short_L.obj-78b3126ea2a01e075c9fd8721f4fbf6f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

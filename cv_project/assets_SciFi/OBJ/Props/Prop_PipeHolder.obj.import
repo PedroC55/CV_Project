@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bnngvst0xadqu"
+path="res://.godot/imported/Prop_PipeHolder.obj-06a1183b104a185ad7b1da14cfefe06e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_PipeHolder.obj-06a1183b104a185ad7b1da14cfefe06e.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Props/Prop_PipeHolder.obj"
+dest_files=["res://.godot/imported/Prop_PipeHolder.obj-06a1183b104a185ad7b1da14cfefe06e.mesh", "res://.godot/imported/Prop_PipeHolder.obj-06a1183b104a185ad7b1da14cfefe06e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

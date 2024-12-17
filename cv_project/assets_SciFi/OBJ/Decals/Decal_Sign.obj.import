@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://djn3ollb7gv3g"
+path="res://.godot/imported/Decal_Sign.obj-e928646ae4e02a59fb1ddf9602f2a9eb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Decal_Sign.obj-e928646ae4e02a59fb1ddf9602f2a9eb.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Decals/Decal_Sign.obj"
+dest_files=["res://.godot/imported/Decal_Sign.obj-e928646ae4e02a59fb1ddf9602f2a9eb.mesh", "res://.godot/imported/Decal_Sign.obj-e928646ae4e02a59fb1ddf9602f2a9eb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

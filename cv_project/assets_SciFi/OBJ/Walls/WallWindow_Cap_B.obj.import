@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcni55uagpj1w"
+path="res://.godot/imported/WallWindow_Cap_B.obj-8a067c37e1fbefaeceed2fc1c42dbbf6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/WallWindow_Cap_B.obj-8a067c37e1fbefaeceed2fc1c42dbbf6.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/WallWindow_Cap_B.obj"
+dest_files=["res://.godot/imported/WallWindow_Cap_B.obj-8a067c37e1fbefaeceed2fc1c42dbbf6.mesh", "res://.godot/imported/WallWindow_Cap_B.obj-8a067c37e1fbefaeceed2fc1c42dbbf6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

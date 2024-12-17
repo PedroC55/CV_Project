@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpbiwgh5348dw"
+path="res://.godot/imported/ShortWall_AccentStrip_Corner_Outer.obj-ad46d80f842f33fdade084ffa750e687.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_AccentStrip_Corner_Outer.obj-ad46d80f842f33fdade084ffa750e687.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/ShortWall_AccentStrip_Corner_Outer.obj"
+dest_files=["res://.godot/imported/ShortWall_AccentStrip_Corner_Outer.obj-ad46d80f842f33fdade084ffa750e687.mesh", "res://.godot/imported/ShortWall_AccentStrip_Corner_Outer.obj-ad46d80f842f33fdade084ffa750e687.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

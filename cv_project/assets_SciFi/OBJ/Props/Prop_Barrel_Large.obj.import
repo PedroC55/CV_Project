@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5x5w7m2huljp"
+path="res://.godot/imported/Prop_Barrel_Large.obj-fbe2b5e9556f9e01fb3c9a0b8a9fbb21.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Barrel_Large.obj-fbe2b5e9556f9e01fb3c9a0b8a9fbb21.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Props/Prop_Barrel_Large.obj"
+dest_files=["res://.godot/imported/Prop_Barrel_Large.obj-fbe2b5e9556f9e01fb3c9a0b8a9fbb21.mesh", "res://.godot/imported/Prop_Barrel_Large.obj-fbe2b5e9556f9e01fb3c9a0b8a9fbb21.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

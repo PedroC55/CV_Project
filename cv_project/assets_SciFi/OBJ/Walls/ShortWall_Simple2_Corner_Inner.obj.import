@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://de2faj1s5iftd"
+path="res://.godot/imported/ShortWall_Simple2_Corner_Inner.obj-74e74526987196b8834bd3c7378e5e30.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_Simple2_Corner_Inner.obj-74e74526987196b8834bd3c7378e5e30.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/ShortWall_Simple2_Corner_Inner.obj"
+dest_files=["res://.godot/imported/ShortWall_Simple2_Corner_Inner.obj-74e74526987196b8834bd3c7378e5e30.mesh", "res://.godot/imported/ShortWall_Simple2_Corner_Inner.obj-74e74526987196b8834bd3c7378e5e30.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

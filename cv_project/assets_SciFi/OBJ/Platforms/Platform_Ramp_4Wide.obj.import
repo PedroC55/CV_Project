@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfry0dks5c7y7"
+path="res://.godot/imported/Platform_Ramp_4Wide.obj-e5a132be1ca736ded3eaad368154075d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_Ramp_4Wide.obj-e5a132be1ca736ded3eaad368154075d.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Platform_Ramp_4Wide.obj"
+dest_files=["res://.godot/imported/Platform_Ramp_4Wide.obj-e5a132be1ca736ded3eaad368154075d.mesh", "res://.godot/imported/Platform_Ramp_4Wide.obj-e5a132be1ca736ded3eaad368154075d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

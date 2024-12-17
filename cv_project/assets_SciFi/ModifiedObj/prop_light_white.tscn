@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://8qp5e410qmr5"]
+
+[ext_resource type="PackedScene" uid="uid://6q8mcy4mpheu" path="res://assets_SciFi/FBX/Props/Prop_Light_Small.fbx" id="1_kydew"]
+[ext_resource type="Script" path="res://lights.gd" id="2_6qub7"]
+
+[node name="Prop_Light_Small" instance=ExtResource("1_kydew")]
+
+[node name="Node3D" type="Node3D" parent="." index="1"]
+script = ExtResource("2_6qub7")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -1.25889, 4.26326e-14)
+light_energy = 7.949
+shadow_enabled = true
+omni_range = 1.273
+omni_attenuation = 0.89
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Node3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2838, 0)
+shadow_enabled = true
+omni_range = 12.6

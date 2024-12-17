@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpjc1pswo03fs"
+path="res://.godot/imported/TopSimple_Straight.obj-8b176f8c5f1b45fd91620e1e9ba242d8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TopSimple_Straight.obj-8b176f8c5f1b45fd91620e1e9ba242d8.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/TopSimple_Straight.obj"
+dest_files=["res://.godot/imported/TopSimple_Straight.obj-8b176f8c5f1b45fd91620e1e9ba242d8.mesh", "res://.godot/imported/TopSimple_Straight.obj-8b176f8c5f1b45fd91620e1e9ba242d8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crhqd731ph6ag"
+path="res://.godot/imported/Decal_Dashes.obj-31a889368193262f69dee20b08305f81.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Decal_Dashes.obj-31a889368193262f69dee20b08305f81.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Decals/Decal_Dashes.obj"
+dest_files=["res://.godot/imported/Decal_Dashes.obj-31a889368193262f69dee20b08305f81.mesh", "res://.godot/imported/Decal_Dashes.obj-31a889368193262f69dee20b08305f81.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

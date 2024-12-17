@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tlj2oealrlh7"
+path="res://.godot/imported/Prop_Rail_Round_Small.obj-cc97db2c675aa9476f778044956b1831.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Rail_Round_Small.obj-cc97db2c675aa9476f778044956b1831.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Props/Prop_Rail_Round_Small.obj"
+dest_files=["res://.godot/imported/Prop_Rail_Round_Small.obj-cc97db2c675aa9476f778044956b1831.mesh", "res://.godot/imported/Prop_Rail_Round_Small.obj-cc97db2c675aa9476f778044956b1831.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

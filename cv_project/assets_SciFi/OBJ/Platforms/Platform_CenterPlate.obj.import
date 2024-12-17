@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://3uaoxr7ju433"
+path="res://.godot/imported/Platform_CenterPlate.obj-891aef011250b2a1e7473ff526ca689c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_CenterPlate.obj-891aef011250b2a1e7473ff526ca689c.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Platform_CenterPlate.obj"
+dest_files=["res://.godot/imported/Platform_CenterPlate.obj-891aef011250b2a1e7473ff526ca689c.mesh", "res://.godot/imported/Platform_CenterPlate.obj-891aef011250b2a1e7473ff526ca689c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

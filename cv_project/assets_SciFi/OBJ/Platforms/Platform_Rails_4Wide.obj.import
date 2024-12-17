@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hieuhn0mm047"
+path="res://.godot/imported/Platform_Rails_4Wide.obj-dc97ada1c9ba627d48e93028f0e52984.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Platform_Rails_4Wide.obj-dc97ada1c9ba627d48e93028f0e52984.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Platform_Rails_4Wide.obj"
+dest_files=["res://.godot/imported/Platform_Rails_4Wide.obj-dc97ada1c9ba627d48e93028f0e52984.mesh", "res://.godot/imported/Platform_Rails_4Wide.obj-dc97ada1c9ba627d48e93028f0e52984.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

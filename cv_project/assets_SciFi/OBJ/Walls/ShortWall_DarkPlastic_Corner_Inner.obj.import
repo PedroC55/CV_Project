@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cikkl2ddqbi4o"
+path="res://.godot/imported/ShortWall_DarkPlastic_Corner_Inner.obj-c2aaba3112f4bf6cb046662dc5ac7726.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ShortWall_DarkPlastic_Corner_Inner.obj-c2aaba3112f4bf6cb046662dc5ac7726.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/ShortWall_DarkPlastic_Corner_Inner.obj"
+dest_files=["res://.godot/imported/ShortWall_DarkPlastic_Corner_Inner.obj-c2aaba3112f4bf6cb046662dc5ac7726.mesh", "res://.godot/imported/ShortWall_DarkPlastic_Corner_Inner.obj-c2aaba3112f4bf6cb046662dc5ac7726.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

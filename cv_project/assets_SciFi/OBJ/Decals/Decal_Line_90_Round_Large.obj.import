@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cifqirxfnvots"
+path="res://.godot/imported/Decal_Line_90_Round_Large.obj-0fb0931a78717f846ad12922c0d3bf0f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Decal_Line_90_Round_Large.obj-0fb0931a78717f846ad12922c0d3bf0f.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Decals/Decal_Line_90_Round_Large.obj"
+dest_files=["res://.godot/imported/Decal_Line_90_Round_Large.obj-0fb0931a78717f846ad12922c0d3bf0f.mesh", "res://.godot/imported/Decal_Line_90_Round_Large.obj-0fb0931a78717f846ad12922c0d3bf0f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

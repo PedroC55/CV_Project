@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://caww01sqgkcpt"
+path="res://.godot/imported/TopWindow_Straight.obj-f00eba07b3b03d71c8851f16746ea117.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TopWindow_Straight.obj-f00eba07b3b03d71c8851f16746ea117.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/TopWindow_Straight.obj"
+dest_files=["res://.godot/imported/TopWindow_Straight.obj-f00eba07b3b03d71c8851f16746ea117.mesh", "res://.godot/imported/TopWindow_Straight.obj-f00eba07b3b03d71c8851f16746ea117.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

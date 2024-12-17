@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dk265glymnebq"
+path="res://.godot/imported/WallBand_Straight_Broken.obj-22b27e8ca664a7e1c152b77896e2c36d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/WallBand_Straight_Broken.obj-22b27e8ca664a7e1c152b77896e2c36d.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Walls/WallBand_Straight_Broken.obj"
+dest_files=["res://.godot/imported/WallBand_Straight_Broken.obj-22b27e8ca664a7e1c152b77896e2c36d.mesh", "res://.godot/imported/WallBand_Straight_Broken.obj-22b27e8ca664a7e1c152b77896e2c36d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

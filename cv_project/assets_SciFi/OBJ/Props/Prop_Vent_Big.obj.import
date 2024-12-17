@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dg3luqdy1mf0p"
+path="res://.godot/imported/Prop_Vent_Big.obj-0290131eb07b67eeb0857827330f49f6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Vent_Big.obj-0290131eb07b67eeb0857827330f49f6.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Props/Prop_Vent_Big.obj"
+dest_files=["res://.godot/imported/Prop_Vent_Big.obj-0290131eb07b67eeb0857827330f49f6.mesh", "res://.godot/imported/Prop_Vent_Big.obj-0290131eb07b67eeb0857827330f49f6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

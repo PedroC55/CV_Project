@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drim0hcktekay"
+path="res://.godot/imported/Door_Frame_A.obj-c3c23390a46f10c06acb4a5b61fd2c0c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Door_Frame_A.obj-c3c23390a46f10c06acb4a5b61fd2c0c.mesh"]
+
+source_file="res://assets_SciFi/OBJ/Platforms/Door_Frame_A.obj"
+dest_files=["res://.godot/imported/Door_Frame_A.obj-c3c23390a46f10c06acb4a5b61fd2c0c.mesh", "res://.godot/imported/Door_Frame_A.obj-c3c23390a46f10c06acb4a5b61fd2c0c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
