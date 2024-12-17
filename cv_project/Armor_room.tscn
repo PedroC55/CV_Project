@@ -14,8 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://dgqfnr87cax68" path="res://Assets/FBX/Armor Room/Other Assets/Rugs/trn_AnimalRug.fbx" id="11_pj0yo"]
 [ext_resource type="PackedScene" uid="uid://cxtpjdvphe60d" path="res://stool.tscn" id="11_tcj11"]
 [ext_resource type="PackedScene" uid="uid://did2qprgy4vfc" path="res://Assets/FBX/Armor Room/Other Assets/Vessels/trn_BottleLong.fbx" id="14_kbpyo"]
-[ext_resource type="PackedScene" uid="uid://dtse5jvnii082" path="res://Assets/FBX/Armor Room/Other Assets/Fireplace/trn_Fireplace.fbx" id="14_s2l0t"]
 [ext_resource type="PackedScene" uid="uid://b7veysrxys070" path="res://fireplace_tube.tscn" id="15_qbacq"]
+[ext_resource type="PackedScene" uid="uid://bj0twgl6gf1mk" path="res://fireplace.tscn" id="16_nwnqi"]
 [ext_resource type="PackedScene" uid="uid://cjbfa2kbsq7aq" path="res://log.tscn" id="16_oba2q"]
 
 [node name="Node3D" type="Node3D"]
@@ -270,9 +270,6 @@ transform = Transform3D(-0.774415, 0, -0.632678, 0, 1, 0, 0.632678, 0, -0.774415
 
 [node name="Fireplace" type="Node" parent="."]
 
-[node name="trn_Fireplace" parent="Fireplace" instance=ExtResource("14_s2l0t")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.861, 0, 0)
-
 [node name="trn_Fireplace_Tube" parent="Fireplace" instance=ExtResource("15_qbacq")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.85917, 1.95734, 0.0118073)
 
@@ -302,6 +299,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.73313, 0.28227, -0.00247604
 
 [node name="trn_Log6" parent="Fireplace" instance=ExtResource("16_oba2q")]
 transform = Transform3D(0.712185, 0, 0.701991, 0, 1, 0, -0.701991, 0, 0.712185, 7.8361, 0.362652, -0.00247604)
+
+[node name="trn_Fireplace" parent="Fireplace" instance=ExtResource("16_nwnqi")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.861, 0, 0)
 
 [node name="Armors" type="Node" parent="."]
 

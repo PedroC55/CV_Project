@@ -1,50 +1,53 @@
 extends CharacterBody3D
 
-# Variables
-var grabbed_object: RigidBody3D = null
-@onready var detection_area = $Head/Area3D
-
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY = 0.01
-const GRAB_OFFSET = Vector3(2, 1, 0)
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+@onready var interaction = $Head/Camera3D/interaction
+@onready var hand = $Head/Camera3D/hand
+@onready var joint = $Head/Camera3D/Generic6DOFJoint3D
+@onready var staticbody = $Head/Camera3D/StaticBody3D
 
+var picked_object
+var pull_power = 4
+var rotation_power = 0.05
+var locked = false
+
+var camera_pitch = 0.0 # Track camera's vertical rotation (pitch)
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	detection_area.body_entered.connect(self._on_body_entered)
-	detection_area.body_exited.connect(self._on_body_exited)
-
-# List of objects in the detection area
-var objects_in_area = []
-
-func _on_body_entered(body):
-	if body is RigidBody3D:
-		objects_in_area.append(body)
-
-func _on_body_exited(body):
-	if body is RigidBody3D:
-		objects_in_area.erase(body)
-
 
 func _process(delta):
-	if Input.is_action_just_pressed("grab"):
-		if grabbed_object:
-			release_object()
-		else:
-			try_grab_object()
-	if grabbed_object:
-		update_grabbed_object_position()
+	if Input.is_action_pressed("grab"):
+		if picked_object == null:
+			pick_object()
+		elif picked_object != null:
+			remove_object()
+
+func pick_object():
+	var collider = interaction.get_collider()
+	if collider != null and collider is RigidBody3D:
+		picked_object = collider
+		joint.set_node_b(picked_object.get_path())
+		
+func remove_object():
+	if picked_object != null:
+		picked_object = null
+		joint.set_node_b(joint.get_path())
 
 func _unhandled_input(event: InputEvent):
 	if event is InputEventMouseMotion:
+		# Rotate the head (yaw) based on horizontal mouse motion
 		head.rotate_y(-event.relative.x * SENSITIVITY)
-		camera.rotate_x(-event.relative.y * SENSITIVITY)
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+
+		# Adjust the camera pitch based on vertical mouse motion
+		camera_pitch = clamp(camera_pitch - event.relative.y * SENSITIVITY, deg_to_rad(-40), deg_to_rad(60))
+		camera.rotation.x = camera_pitch
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -67,24 +70,8 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
-
-func try_grab_object():
-	if objects_in_area.size() > 0:
-		grabbed_object = objects_in_area[0]  # Grab the first object in the area
-		grabbed_object.freeze = true
-		print("Object grabbed:", grabbed_object.name)
-
-func release_object():
-	if grabbed_object:
-		grabbed_object.freeze = false
-		grabbed_object = null
-		print("Object released")
-		
-# Function to update the position of the grabbed object
-func update_grabbed_object_position():
-	if grabbed_object:
-		# Set the position of the grabbed object relative to the player (camera/head)
-		grabbed_object.get_parent_node_3d().position = head.position + head.transform.basis.x * GRAB_OFFSET.x + GRAB_OFFSET
-		print(grabbed_object.get_parent_node_3d().position)
-		# Optionally, you may want to keep the object oriented in a certain way. If so, set the rotation too:
-		# grabbed_object.rotation = camera.rotation
+	
+	if picked_object != null:
+		var a = picked_object.global_transform.origin
+		var b = hand.global_transform.origin
+		picked_object.set_linear_velocity((b-a) * pull_power)
