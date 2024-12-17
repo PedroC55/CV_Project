@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://cy6ffiorflcw8"]
+
+[ext_resource type="Texture2D" uid="uid://dbt6jmjrmcdk1" path="res://Assets/FBX/Armor Room/Other Assets/Plates/trn_Plates_AlbedoTransparency.png" id="1_uj38x"]
+[ext_resource type="Texture2D" uid="uid://csuk0257udlfh" path="res://Assets/FBX/Armor Room/Other Assets/Plates/trn_Plates_MetallicSmoothness.png" id="2_d26yx"]
+[ext_resource type="Texture2D" uid="uid://b1s7nrxig448o" path="res://Assets/FBX/Armor Room/Other Assets/Plates/trn_Plates_Normal.png" id="3_rgt6v"]
+
+[resource]
+resource_name = "trn_Plates.003"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.82098, 0.82098, 0.82098, 1)
+albedo_texture = ExtResource("1_uj38x")
+metallic = 1.0
+metallic_texture = ExtResource("2_d26yx")
+emission_enabled = true
+emission = Color(0.906332, 0.906332, 0.906332, 1)
+emission_energy_multiplier = 0.0
+normal_enabled = true
+normal_texture = ExtResource("3_rgt6v")

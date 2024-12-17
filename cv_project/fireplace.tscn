@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj0twgl6gf1mk"]
+
+[ext_resource type="PackedScene" uid="uid://dtse5jvnii082" path="res://Assets/FBX/Armor Room/Other Assets/Fireplace/trn_Fireplace.fbx" id="1_jotbn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4bemm"]
+size = Vector3(2, 1.4043, 1.755)
+
+[node name="trn_Fireplace" instance=ExtResource("1_jotbn")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.735112, -0.122498)
+shape = SubResource("BoxShape3D_4bemm")

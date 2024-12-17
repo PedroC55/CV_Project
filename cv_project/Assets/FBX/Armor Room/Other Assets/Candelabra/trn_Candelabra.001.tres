@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://6y7uns20p2rd"]
+
+[ext_resource type="Texture2D" uid="uid://dk6bgw43pwxwv" path="res://Assets/FBX/Armor Room/Other Assets/Candelabra/trn_Candelabra_AlbedoTransparency.png" id="1_qt1sl"]
+[ext_resource type="Texture2D" uid="uid://bkmub6m2hoy0s" path="res://Assets/FBX/Armor Room/Other Assets/Candelabra/trn_Candelabra_MetallicSmoothness.png" id="2_ebkxs"]
+[ext_resource type="Texture2D" uid="uid://b6tdicahqdb4d" path="res://Assets/FBX/Armor Room/Other Assets/Candelabra/trn_Candelabra_Normal.png" id="3_tiycr"]
+
+[resource]
+resource_name = "trn_Candelabra.001"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.82098, 0.82098, 0.82098, 1)
+albedo_texture = ExtResource("1_qt1sl")
+metallic = 1.0
+metallic_texture = ExtResource("2_ebkxs")
+emission_enabled = true
+emission = Color(0.906332, 0.906332, 0.906332, 1)
+emission_energy_multiplier = 0.0
+normal_enabled = true
+normal_texture = ExtResource("3_tiycr")

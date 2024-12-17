@@ -1,0 +1,48 @@
+[gd_scene load_steps=10 format=3 uid="uid://ju54x5eg6apr"]
+
+[ext_resource type="PackedScene" uid="uid://dforrb8h1ygcw" path="res://Assets/FBX/Armor Room/Other Assets/Candles/trn_Candle.fbx" id="1_dowlu"]
+[ext_resource type="Script" path="res://omni_light_3d.gd" id="2_m3gup"]
+[ext_resource type="Texture2D" uid="uid://dn4vn8t4wftne" path="res://Assets/FBX/Armor Room/Other Assets/Candles/trn_Candle_AlbedoTransparency.png" id="2_xe6th"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ityl2"]
+albedo_texture = ExtResource("2_xe6th")
+
+[sub_resource type="Gradient" id="Gradient_5cpc4"]
+offsets = PackedFloat32Array(0, 0.533333, 1)
+colors = PackedColorArray(1, 1, 0, 1, 1, 0.647059, 0, 0.501961, 1, 0.647059, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jsaiu"]
+gradient = SubResource("Gradient_5cpc4")
+
+[sub_resource type="Curve" id="Curve_aq5wl"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1e-05, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_6hi12"]
+curve = SubResource("Curve_aq5wl")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_l6h3s"]
+emission_shape = 1
+emission_sphere_radius = 0.05
+initial_velocity_min = 1.0
+initial_velocity_max = 2.0
+gravity = Vector3(0, -1, 0)
+scale_curve = SubResource("CurveTexture_6hi12")
+color_ramp = SubResource("GradientTexture1D_jsaiu")
+
+[node name="trn_Candle" instance=ExtResource("1_dowlu")]
+
+[node name="trn_Candle" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ityl2")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.256249, 0)
+light_color = Color(1, 0.647059, 0, 1)
+light_energy = 0.8
+shadow_enabled = true
+script = ExtResource("2_m3gup")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="OmniLight3D" index="0"]
+amount = 150
+lifetime = 0.6
+process_material = SubResource("ParticleProcessMaterial_l6h3s")

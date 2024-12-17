@@ -1,27 +1,28 @@
-[gd_scene load_steps=32 format=3 uid="uid://r3008b14bhbe"]
+[gd_scene load_steps=31 format=3 uid="uid://cke0vdsbuxcfp"]
 
 [ext_resource type="PackedScene" uid="uid://clw06urxjopyb" path="res://tree_updated.tscn" id="1_ckl1k"]
 [ext_resource type="Texture2D" uid="uid://vq4jewmxqh82" path="res://Assets/Textures/ground_textures/forrest_ground_01_diff_1k.jpg" id="1_t76ag"]
 [ext_resource type="Texture2D" uid="uid://bu6iw22autrua" path="res://Assets/Textures/ground_textures/forrest_ground_01_nor_gl_1k.png" id="2_6vg75"]
-[ext_resource type="PackedScene" uid="uid://hns3t2s8ryp" path="res://Assets/FBX/Flower_4_Group.fbx" id="2_cvud8"]
+[ext_resource type="PackedScene" uid="uid://hns3t2s8ryp" path="res://Assets/FBX/Forest/Flower_4_Group.fbx" id="2_cvud8"]
 [ext_resource type="Texture2D" uid="uid://bs8nmyn5tt1o3" path="res://Assets/Textures/ground_textures/forrest_ground_01_rough_1k.jpg" id="3_l8bel"]
-[ext_resource type="PackedScene" uid="uid://hq4e761mpyq6" path="res://Assets/FBX/Flower_3_Single.fbx" id="3_x4vp1"]
-[ext_resource type="PackedScene" uid="uid://dk7bdt6d82vjr" path="res://Assets/FBX/Flower_3_Group.fbx" id="4_hcqd5"]
-[ext_resource type="PackedScene" uid="uid://bd23ub8eg2el4" path="res://Assets/FBX/Fern_1.fbx" id="5_pr2dt"]
-[ext_resource type="PackedScene" uid="uid://cwvn0nighww52" path="res://Assets/FBX/Clover_1.fbx" id="6_0tjqf"]
-[ext_resource type="PackedScene" uid="uid://dm14y8uqr8txn" path="res://Assets/FBX/Bush_Common.fbx" id="7_8ss1h"]
-[ext_resource type="PackedScene" uid="uid://dyrvbpjnfay2u" path="res://Assets/FBX/Bush_Common_Flowers.fbx" id="8_fru8e"]
-[ext_resource type="PackedScene" uid="uid://s86gfkdf18eu" path="res://Assets/FBX/Grass_Common_Short.fbx" id="10_oogv2"]
+[ext_resource type="PackedScene" uid="uid://hq4e761mpyq6" path="res://Assets/FBX/Forest/Flower_3_Single.fbx" id="3_x4vp1"]
+[ext_resource type="PackedScene" uid="uid://dk7bdt6d82vjr" path="res://Assets/FBX/Forest/Flower_3_Group.fbx" id="4_hcqd5"]
+[ext_resource type="PackedScene" uid="uid://bd23ub8eg2el4" path="res://Assets/FBX/Forest/Fern_1.fbx" id="5_pr2dt"]
+[ext_resource type="PackedScene" uid="uid://cwvn0nighww52" path="res://Assets/FBX/Forest/Clover_1.fbx" id="6_0tjqf"]
+[ext_resource type="PackedScene" uid="uid://dm14y8uqr8txn" path="res://Assets/FBX/Forest/Bush_Common.fbx" id="7_8ss1h"]
+[ext_resource type="PackedScene" uid="uid://dyrvbpjnfay2u" path="res://Assets/FBX/Forest/Bush_Common_Flowers.fbx" id="8_fru8e"]
+[ext_resource type="PackedScene" uid="uid://s86gfkdf18eu" path="res://Assets/FBX/Forest/Grass_Common_Short.fbx" id="10_oogv2"]
 [ext_resource type="PackedScene" uid="uid://c0bdiqcpg7o1j" path="res://rock.tscn" id="11_dwt1s"]
-[ext_resource type="PackedScene" uid="uid://ek0u48h0r61" path="res://Assets/FBX/TwistedTree_2.fbx" id="12_0el3m"]
+[ext_resource type="PackedScene" uid="uid://ek0u48h0r61" path="res://Assets/FBX/Forest/TwistedTree_2.fbx" id="12_0el3m"]
 [ext_resource type="Script" path="res://day_night_cycle.gd" id="14_gcm41"]
-[ext_resource type="PackedScene" uid="uid://mvn525woeol1" path="res://Assets/FBX/Petal_3.fbx" id="16_tg7l8"]
-[ext_resource type="Script" path="res://player.gd" id="17_erkrs"]
+[ext_resource type="PackedScene" uid="uid://mvn525woeol1" path="res://Assets/FBX/Forest/Petal_3.fbx" id="16_tg7l8"]
+[ext_resource type="PackedScene" uid="uid://chg5arn7op3pv" path="res://player.tscn" id="17_6stt3"]
+[ext_resource type="PackedScene" uid="uid://cl46084bqkv7d" path="res://Assets/FBX/Armor Room/Armors/uploads_files_4749824_armor.blend" id="18_3rjsc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gwcni"]
 size = Vector3(30, 2, 30)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eedpt"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hkn6q"]
 albedo_color = Color(0.548667, 0.969458, 0.241803, 1)
 albedo_texture = ExtResource("1_t76ag")
 roughness_texture = ExtResource("3_l8bel")
@@ -31,7 +32,7 @@ normal_texture = ExtResource("2_6vg75")
 uv1_scale = Vector3(60, 60, 60)
 
 [sub_resource type="BoxMesh" id="BoxMesh_l54m4"]
-material = SubResource("StandardMaterial3D_eedpt")
+material = SubResource("StandardMaterial3D_hkn6q")
 size = Vector3(30, 2, 30)
 
 [sub_resource type="Gradient" id="Gradient_x0c50"]
@@ -73,11 +74,6 @@ background_energy_multiplier = 0.55
 sky = SubResource("Sky_5epha")
 ambient_light_source = 3
 reflected_light_source = 2
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_o77oa"]
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nfpg5"]
-points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
 
 [node name="Node3D" type="Node3D"]
 
@@ -315,7 +311,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -5.5)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -13)
 
 [node name="Pebble_Square_10" parent="Rocks" instance=ExtResource("11_dwt1s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -14.8)
 
 [node name="Pebble_Square_11" parent="Rocks" instance=ExtResource("11_dwt1s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -14)
@@ -324,7 +320,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -14)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -13)
 
 [node name="Pebble_Square_13" parent="Rocks" instance=ExtResource("11_dwt1s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -14.8)
 
 [node name="Pebble_Square_14" parent="Rocks" instance=ExtResource("11_dwt1s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -14)
@@ -363,17 +359,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.905, 0, 0)
 [node name="Petal_5" parent="Petals" instance=ExtResource("16_tg7l8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0, 0.465)
 
-[node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -9)
-script = ExtResource("17_erkrs")
+[node name="Player" parent="." instance=ExtResource("17_6stt3")]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
-mesh = SubResource("CapsuleMesh_o77oa")
+[node name="uploads_files_4749824_armor" parent="." instance=ExtResource("18_3rjsc")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.37542, 0, 1.92486)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
-shape = SubResource("ConvexPolygonShape3D_nfpg5")
-
-[node name="Head" type="Node3D" parent="Player"]
-
-[node name="Camera3D" type="Camera3D" parent="Player/Head"]
-transform = Transform3D(1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 0, 1, 0)
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.277649, 9.40504, -0.947021)
+size = Vector3(28.0052, 20, 27.3765)

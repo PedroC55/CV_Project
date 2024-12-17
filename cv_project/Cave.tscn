@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://3dkqua4i6c0a"]
+
+[ext_resource type="PackedScene" uid="uid://chg5arn7op3pv" path="res://player.tscn" id="1_vp3lq"]
+[ext_resource type="PackedScene" uid="uid://04ypfpnuyjg3" path="res://Assets/Blender/cave.blend" id="2_1hkel"]
+
+[node name="World" type="Node3D"]
+
+[node name="cave" parent="." instance=ExtResource("2_1hkel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.07074, 7.05552, 15.0463)
+
+[node name="Player" parent="." instance=ExtResource("1_vp3lq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -119.149, 16.4203, 87.015)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 76.1646, 105.267)
+visible = false
+sky_mode = 1
+
+[editable path="cave"]
+[editable path="Player"]

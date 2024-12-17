@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://cqb7fkyead5iu"]
+
+[ext_resource type="Texture2D" uid="uid://d11aodb6t4hb0" path="res://Assets/Textures/ground_textures/textures/dark_wooden_planks_diff_1k.jpg" id="1_2e1kb"]
+[ext_resource type="Texture2D" uid="uid://rg2q1adufeu4" path="res://Assets/Textures/ground_textures/textures/dark_wooden_planks_nor_gl_1k.png" id="2_08kpf"]
+[ext_resource type="Texture2D" uid="uid://guqn8bsdc0i1" path="res://Assets/Textures/ground_textures/textures/dark_wooden_planks_rough_1k.exr" id="3_uk4tu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lecsy"]
+cull_mode = 2
+albedo_texture = ExtResource("1_2e1kb")
+roughness_texture = ExtResource("3_uk4tu")
+normal_enabled = true
+normal_texture = ExtResource("2_08kpf")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fi3do"]
+material = SubResource("StandardMaterial3D_lecsy")
+size = Vector2(18, 18)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3i025"]
+size = Vector3(18, 0, 18)
+
+[node name="Room" type="StaticBody3D"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_fi3do")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_3i025")
