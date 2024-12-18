@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjvjykq4cthik"
-path.s3tc="res://.godot/imported/T_Trim_01_Normal.png-fc13405e3002c40335964fb83c21de34.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Trim_01_Normal.png-3ee321be8245ca7c26680703f48fa9b8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets_SciFi/textures/T_Trim_01_Normal.png"
-dest_files=["res://.godot/imported/T_Trim_01_Normal.png-fc13405e3002c40335964fb83c21de34.s3tc.ctex"]
+source_file="res://assets_SciFi/Textures/T_Trim_01_Normal.png"
+dest_files=["res://.godot/imported/T_Trim_01_Normal.png-3ee321be8245ca7c26680703f48fa9b8.s3tc.ctex"]
 
 [params]
 

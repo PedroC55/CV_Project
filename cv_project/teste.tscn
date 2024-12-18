@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://dgl65s82hj5f1"]
+
+[ext_resource type="Shader" path="res://scanner.gdshader" id="1_0lf8j"]
+[ext_resource type="PackedScene" uid="uid://chg5arn7op3pv" path="res://player.tscn" id="1_h3o2x"]
+[ext_resource type="PackedScene" uid="uid://d15wv5ugisja4" path="res://Assets/FBX/Forest/CommonTree_1.fbx" id="2_pwhun"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_oq68f"]
+size = Vector2(20, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c0l22"]
+size = Vector3(20, 1, 20)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5tcce"]
+render_priority = 0
+shader = ExtResource("1_0lf8j")
+shader_parameter/point_size = 5.0
+shader_parameter/max_distance = 15.0
+shader_parameter/min_distance = 5.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fc8y5"]
+render_priority = 0
+shader = ExtResource("1_0lf8j")
+shader_parameter/point_size = 5.0
+shader_parameter/max_distance = 15.0
+shader_parameter/min_distance = 5.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_oq68f")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_c0l22")
+
+[node name="Player" parent="." instance=ExtResource("1_h3o2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28686, 4.11495)
+
+[node name="CommonTree_1" parent="." instance=ExtResource("2_pwhun")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58051, 0.5, -6.29429)
+
+[node name="CommonTree_1" parent="CommonTree_1" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_5tcce")
+surface_material_override/1 = SubResource("ShaderMaterial_fc8y5")
+
+[editable path="CommonTree_1"]

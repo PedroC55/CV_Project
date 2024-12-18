@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddn240525t5w7"
-path.s3tc="res://.godot/imported/T_Trim_03_Cables.png-bc60cda5e9d73c6d8a29a3c074045687.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Trim_03_Cables.png-9b330827a584c545f4ba618863d8ff37.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets_SciFi/textures/T_Trim_03_Cables.png"
-dest_files=["res://.godot/imported/T_Trim_03_Cables.png-bc60cda5e9d73c6d8a29a3c074045687.s3tc.ctex"]
+source_file="res://assets_SciFi/Textures/T_Trim_03_Cables.png"
+dest_files=["res://.godot/imported/T_Trim_03_Cables.png-9b330827a584c545f4ba618863d8ff37.s3tc.ctex"]
 
 [params]
 

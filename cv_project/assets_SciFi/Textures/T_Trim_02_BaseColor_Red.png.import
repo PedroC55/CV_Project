@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y525sbekbrdo"
-path.s3tc="res://.godot/imported/T_Trim_02_BaseColor_Red.png-842c865edac5f39b2ca964dc7c1f5632.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Trim_02_BaseColor_Red.png-66ca0db9e760f3b713e43c2d263c23fe.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets_SciFi/textures/T_Trim_02_BaseColor_Red.png"
-dest_files=["res://.godot/imported/T_Trim_02_BaseColor_Red.png-842c865edac5f39b2ca964dc7c1f5632.s3tc.ctex"]
+source_file="res://assets_SciFi/Textures/T_Trim_02_BaseColor_Red.png"
+dest_files=["res://.godot/imported/T_Trim_02_BaseColor_Red.png-66ca0db9e760f3b713e43c2d263c23fe.s3tc.ctex"]
 
 [params]
 
