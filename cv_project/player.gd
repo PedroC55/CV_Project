@@ -11,6 +11,7 @@ const SENSITIVITY = 0.01
 @onready var hand = $Head/Camera3D/hand
 @onready var joint = $Head/Camera3D/Generic6DOFJoint3D
 @onready var staticbody = $Head/Camera3D/StaticBody3D
+@onready var flashlight = $Head/Camera3D/SpotLight3D
 
 var picked_object
 var pull_power = 4
@@ -23,11 +24,21 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _process(delta):
-	if Input.is_action_pressed("grab"):
+	if Input.is_action_just_pressed("grab"):
 		if picked_object == null:
 			pick_object()
 		elif picked_object != null:
 			remove_object()
+	elif Input.is_action_just_pressed("on_off_light"):
+		turn_onandoff_light()
+
+func turn_onandoff_light():
+	if flashlight.light_energy != 0:
+		flashlight.light_energy = 0
+		flashlight.light_indirect_energy = 0
+	else:
+		flashlight.light_energy = 5
+		flashlight.light_indirect_energy = 1
 
 func pick_object():
 	var collider = interaction.get_collider()
