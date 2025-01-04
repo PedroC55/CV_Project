@@ -23,13 +23,7 @@ void vertex() {
     POINT_SIZE = point_size;
 }
 
-void fragment() {
-	//float light_intensity = clamp(dot(NORMAL, -LIGHT_VERTEX), 0.0, 1.0);
-	//if (light_intensity <= 0.0)
-	//{
-        //discard;
-	//}
-	
+void fragment() {	
 	if(vertex_distance > max_distance){
 	// Se estamos processando um vértice, colore com a cor dos vértices
 		discard;
@@ -45,13 +39,5 @@ void fragment() {
 }
 
 void light(){
-	//float light_intensity = clamp(dot(NORMAL, -LIGHT), 0.0, 1.0);
-	//
-	//if (light_intensity <= 0.0) {
-        //discard;
-	//}
-	//else{
-		//
-	//}
-		DIFFUSE_LIGHT = vec3(1.0);
+	DIFFUSE_LIGHT += clamp(dot(NORMAL, LIGHT), 0.0, 1.0) * (ATTENUATION * 4.0) * LIGHT_COLOR;
 }
